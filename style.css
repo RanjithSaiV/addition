@@ -1,0 +1,36 @@
+/* Custom CSS for styling and responsiveness */
+.quiz-container {
+  max-width: 400px; /* Set a maximum width for the container */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 20px; /* Add padding to create space around the content */
+}
+
+/* Add responsive classes for various screen sizes */
+@media (max-width: 576px) {
+  .quiz-container {
+      max-width: 100%; /* For extra small screens, make it full width */
+  }
+}
+
+@media (min-width: 577px) and (max-width: 767px) {
+  /* For small screens, you can adjust the max-width as needed */
+  .quiz-container {
+      max-width: 300px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /* For medium screens, you can adjust the max-width as needed */
+  .quiz-container {
+      max-width: 400px;
+  }
+}
+
+/* You can continue to add more media queries for larger screens */
+
+*, ::after, ::before {
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 2vh;
+}
+
